@@ -8,9 +8,9 @@ import Link from "next/link";
 export default async function Customer(){
   const session = await getServerSession(authOptions);
   
-    if(!session || !session.user){
-      redirect('/');
-    }
+  if(!session || !session.user){
+    redirect('/');
+  }
   
 
   return(
